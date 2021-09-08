@@ -16,7 +16,6 @@ div {
 }
 
 body {
-  background: url(pink-spring-flowers.jpg) center center / cover no-repeat fixed;
   font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN W3", sans-serif;
   color: #3b4043;
 }
@@ -54,7 +53,7 @@ a {
 }
 
 .nav__left {
-  font-size: 24px;
+  font-size: 30px;
 }
 
 .nav__btn{
@@ -94,6 +93,7 @@ a {
   justify-content: space-between;
   align-items: center;
   min-height: calc(100vh - 182px);
+  background: url(pink-spring-flowers.jpg) center center / cover no-repeat fixed;
 }
 
 
@@ -131,21 +131,4 @@ a {
 .form__btn:hover {
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
   cursor: pointer;
-}
-
-
-/* フッター */
-
-.footer {
-  background-color: #999;
-  padding: 5px;
-  width:  100%; 
-  position: absolute;
-  box-sizing:  border-box;
-  bottom: 0;
-}
-.copyright {
-  text-align: center;
-  color: #fff;
-  font-size: 10px;
 }

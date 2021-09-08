@@ -1,0 +1,19 @@
+<div class="post">
+  <div class="upper-post">
+    <div class="post-user">
+      <!-- 投稿したユーザー名情報を出力する -->
+      <%= post.user.nickname %>
+    </div>
+    <div class="post-date">
+      <!-- 投稿した時刻を出力する -->
+      <%= l post.created_at %>
+    </div>
+  </div>
+  <div class="lower-post">
+    <div class="post-content">
+      <!-- 投稿したメッセージ内容を記述する -->
+      <%= post.content %>
+    </div>
+    <%= image_tag post.image.variant(resize: '500x500'), class: 'message-image' if post.image.attached? %>
+  </div>
+</div>
