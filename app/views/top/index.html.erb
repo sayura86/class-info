@@ -1,0 +1,16 @@
+<main class="main">
+  <div class="inner">
+    <div class="top_page">
+    <% if user_signed_in? %>
+      <div class="greeting">
+        こんにちは、
+        <%= link_to current_user.nickname + "さん", "#", class: :greeting__link%>
+      </div>
+    <% end %>
+    </div>
+
+    <div class="card__wrapper">
+     <%#= render partial: "prototype", collection: @prototypes %>
+    </div>
+  </div>
+</main>

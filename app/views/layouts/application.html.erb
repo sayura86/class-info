@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Class Info</title>
+    <title>TOPIC SCHOOL</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -15,13 +15,13 @@
       <div class="inner">
         <div class="nav">
           <div class="nav__left">
-            <%#= link_to image_tag class: :logo, root_path %>
-            Class Info
+            <%= link_to "TOPIC SCHOOL", root_path %>
           </div>
           <% if user_signed_in? %>
             <div class="nav__right">
               <%= link_to "ログアウト", "#", method: :delete, class: :nav__logout %>
-              <%= link_to "クラスのお知らせ", "#", class: :nav__btn %>
+              <%#= link_to "学年一覧", topic_posts_path, class: :nav__btn %>
+              <%= link_to "トピック", topics_path, class: :nav__btn %>
             </div>
           <% else %>
             <div class="nav__right">
@@ -33,8 +33,7 @@
       </div>
     </header>
     <%= yield %>
-    <footer class="footer">
-      <p class="copyright">Copyright © 2021 S.S</p>
+    <footer>
     </footer>
   </body>
 </html>

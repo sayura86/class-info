@@ -1,0 +1,16 @@
+<div class="topics">
+<h1>トピック新規作成</h1>
+  <%=form_with model: @topic, local: true do |f|%>
+  <%= f.text_field :title %>
+  <%= f.submit "作成"%>
+  <% end %>
+
+<h1>トピック一覧</h1>
+  <% current_user.topics.each do |topic| %>
+    <div class="topic">
+      <div class="topic-title">
+       <%= link_to topic.title, topic_posts_path(topic) %>
+     </div>
+    </div>
+  <% end %>
+</div>
